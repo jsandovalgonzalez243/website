@@ -6,7 +6,7 @@ setInterval(clock);
 
 function clock() {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight - 237.333;
+    canvas.height = window.innerHeight - 160;
 
     let radius;
     
