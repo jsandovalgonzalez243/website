@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    height: 100vh;
+    background-color: RebeccaPurple;
+    color: white;
+}
+
+canvas {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 237.333px);
+}
+
+
+header {
+    height: 80px;
+    background-image: url('ribbon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 100px;
+  }
+  
+footer > p {
+  color:lightgreen;
+  margin: 12px 12px;
+  position: absolute;
+  bottom: 0;
+}
