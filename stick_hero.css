@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: rosybrown;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    height: 80px;
+    background-image: url('ribbon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 100px;
+  }
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#game {
+    width: 80%;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+#introduction {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: opacity 2s;
+}
+
+#restart {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+  color: black;
+  background-color: lightblue;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: none;
+  cursor: pointer;
+}
+
+#perfect {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+footer {
+    margin: 6px 24px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
