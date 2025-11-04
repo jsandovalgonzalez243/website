@@ -16,11 +16,6 @@ canvas {
   height: calc(100vh - 160px);
 }
 
-video, audio {
-  justify-content: center;
-  align-items: center;
-}
-
 header {
     height: 80px;
     background-image: url('ribbon.png');
