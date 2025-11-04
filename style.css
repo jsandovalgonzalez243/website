@@ -9,13 +9,17 @@ body {
     color: white;
 }
 
-canvas, video, audio {
+canvas {
   justify-content: center;
   align-items: center;
   width: 100%;
   height: calc(100vh - 160px);
 }
 
+video, audio {
+  justify-content: center;
+  align-items: center;
+}
 
 header {
     height: 80px;
