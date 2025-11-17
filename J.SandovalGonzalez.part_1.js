@@ -4,7 +4,7 @@ const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
 let canvasWidth = window.innerWidth;
-let canvasHeight = window.innerHeight;
+let canvasHeight = window.innerHeight - 25;
 
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
@@ -50,7 +50,7 @@ function animate() {
 function resizeCanvas() {
     canvasWidth = window.innerWidth;
     canvas.width = canvasWidth;
-    canvasHeight = window.innerHeight;
+    canvasHeight = window.innerHeight - 25;
     canvas.height = canvasHeight;
 
     particle.x = canvasWidth / 2;
