@@ -75,7 +75,7 @@ button:hover {
 }
 
 .element {
-   background-image: url('crad.png');
+   background-image: url('image.png');
    /* size of one frame */
    width: calc(20px*5);
    height: calc(24px*5);
@@ -98,18 +98,11 @@ button:hover {
 
 @keyframes slide-in {
   0% {
-    translate: 250vw 0;
-    scale: 400% 1;
-  }
-
-  50% {
-    translate: 0 0;
-    scale: 400% 1;
+    transform: translateY(100vw);
   }
 
   100% {
-    translate: 0 0;
-    scale: 100% 1;
+    transform: translateY(0);
   }
 }
 
