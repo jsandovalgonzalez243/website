@@ -1,0 +1,124 @@
+/* --- General Page Styling --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* Dark Blue-Gray Background */
+    color: #D1D5DB; /* Light Gray Text */
+    line-height: 1.7;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #34D399; /* Vibrant Green Accent */
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #9CA3AF; /* Lighter Gray */
+}
+
+h2 {
+    color: #818CF8; /* Vibrant Indigo/Purple Accent */
+    border-left: 4px solid #818CF8; /* Match accent color */
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #D1D5DB; /* Light Gray */
+}
+
+/* --- Example 1: Navigation Bar Animation --- */
+
+.example-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Lay out list items horizontally */
+    justify-content: center;
+    gap: 30px;
+}
+
+.example-nav a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #60A5FA; /* Bright Blue */
+    padding: 10px 5px;
+    
+    /* Crucial for underline positioning */
+    position: relative;
+}
+
+/* The Pseudo-Element for the Underline */
+.example-nav a::after {
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    height: 3px;
+    background-color: #34D399; /* Vibrant Green Underline */
+    
+    /* Start the underline at 0% width (invisible) */
+    width: 0; 
+    
+    /* Animation: Animate the 'width' property smoothly over 0.3 seconds */
+    transition: width 0.3s ease-out;
+}
+
+/* HOVER EVENT: Animate the width to 100% */
+.example-nav a:hover::after {
+    width: 100%; 
+}
+
+/* --- Example 2: JavaScript Control Area --- */
+
+.control-area {
+    text-align: center;
+    padding: 20px 0;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #F472B6; /* Pink button color */
+    color: white;
+    transition: all 0.2s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #EC4899;
+    transform: scale(1.05);
+}
+
+/* CSS for the JavaScript-controlled text element */
+.js-text-effect {
+    text-align: center;
+    min-height: 50px; /* Gives space for the text to appear */
+    padding-top: 10px;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #FFC107; /* Gold/Amber default color */
+    transition: all 0.3s ease;
+}

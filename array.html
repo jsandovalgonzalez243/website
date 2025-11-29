@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS & CSS Animation Demo | Jorge Sandoval Gonzalez</title>
+    
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="beginner_style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1 id="main-title">HTML5, CSS3, & JavaScript Animation Demo</h1>
+            <h3>Jorge Sandoval Gonzalez</h3>
+            <p class="subtitle" id="subtitle-text">Use the buttons below to control the animation and text!</p>
+        </header>
+
+        <!-- ============================================= -->
+        <!-- EXAMPLE 1: CSS ANIMATION & HOVER EFFECT (NavBar) -->
+        <!-- ============================================= -->
+        <section>
+            <h2>CSS Transition: Animated Navigation Bar</h2>
+            <p>This navigation bar uses CSS <code>transition</code> and the <code>::after</code> pseudo-element to create a smooth, growing underline when you hover over the links. This is a purely CSS effect!</p>
+            
+            <nav class="example-nav">
+                <ul>
+                    <!-- Note: The JS code will change the text of these links using an array! -->
+                    <li><a id="nav-link-0" href="#">Home</a></li>
+                    <li><a id="nav-link-1" href="#">Demos</a></li>
+                    <li><a id="nav-link-2" href="#">Info</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- EXAMPLE 2: JS CONTROLLED TEXT & BUTTONS -->
+        <!-- ============================================= -->
+        <section>
+            <h2>JavaScript Control: Array and Conditional Logic</h2>
+            <p>This section demonstrates how JavaScript, using an <strong>Array</strong> and <strong>Conditional Statements (If/Else)</strong>, can dynamically change the content and behavior of your page.</p>
+            
+            <div class="control-area">
+                <!-- Buttons used to trigger JavaScript functions -->
+                <button id="change-text-btn">Change Text</button>
+                <button id="status-btn">Check Status</button>
+            </div>
+
+            <!-- The text element that will be manipulated by JavaScript -->
+            <h3 id="status-message" class="js-text-effect"></h3>
+        </section>
+        
+    </div>
+
+    <!-- Link to the external JavaScript file, loaded after the HTML -->
+    <script src="beginner_script.js" defer></script>
+</body>
+</html>
