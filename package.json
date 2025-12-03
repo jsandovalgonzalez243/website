@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@lottiefiles/dotlottie-web": "^0.57.0",
+    "webpack": "^5.103.0"
+  },
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
+  }
+}
