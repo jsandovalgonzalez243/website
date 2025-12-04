@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightslategray;
+  color: black;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+canvas, dotlottie-wc {
+  width: 100%;
+}
