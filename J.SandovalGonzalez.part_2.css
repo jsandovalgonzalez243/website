@@ -5,8 +5,13 @@ body {
 
 p {
     margin: 0;
+    display: inline;
 }
 
 canvas {
     background-color: gray;
+}
+
+.right {
+    float: right;
 }

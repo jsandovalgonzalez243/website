@@ -5,6 +5,9 @@ body {
 
 p {
     margin: 0;
-    float: right;
     display: inline;
+}
+
+canvas {
+    background-color: gray;
 }
